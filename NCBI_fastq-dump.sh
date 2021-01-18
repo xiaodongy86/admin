@@ -3,10 +3,10 @@
 NCBI_fastq dump_TIPS
 ncbi automatically downloads data to home directory
 No matter where you run fastq-dump you will automatically be forced to download tons of data into a hard coded folder named ncbi in your home directory. This plan WILL NOT WORK:
-```sh
+'''sh
 change directory to spacious filesystem: cd /data5/bigData/
 run fastq-dump SRR123456
-```sh
+'''sh
 If that sample SRR123456 is larger than 5 GB, then your home directory will grow to use more data at /home/username/ than the ECOS NFS server disk quota will allow. You will receive emails warning about the problem and eventually you will be unable to login again until you email the helpdesk to remove the ncbi folder and all of its contents.
 
 Therefore, we must create a link named ncbi in our home directory and that link must point to another location where there is enough storage capacity to hold all of the data you will download using fastq-dump. Firstly remove an existing ncbi link or directory at the root of your home directory:
