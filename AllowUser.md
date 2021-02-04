@@ -7,7 +7,7 @@ nano /etc/ssh/sshd_config
 ```
 AllowUsers xzp123 mmj343 las199
 ```
-# make sure that you are logged into machine and do not log out until you see yourself able to login with new configuration 
+#make sure that you are logged into machine and do not log out until you see yourself able to login with new configuration 
 ```
 service sshd status
 service sshd restart
