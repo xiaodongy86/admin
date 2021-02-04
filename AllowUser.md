@@ -13,4 +13,5 @@ service sshd status
 service sshd restart
 ```
 #Now confirm that login still works. 
-#Now confirm that new user, recently allowed in can login because you have added their username to AllowUsers line and because you restarted sshd so that the new configuration is #alive
+#Now confirm that new user, recently allowed in can login because you have added their username to 
+#AllowUsers line and because you restarted sshd so that the new configuration is alive
