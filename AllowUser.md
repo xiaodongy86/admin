@@ -4,6 +4,7 @@ The process to allow an account to login to a lab machine is like this:
 * add users account ID to the end of the line starting with AllowUsers
 * ensure that you already have a logged-in terminal on the machine so in case of sshd failing to restart
 * restart sshd with **service sshd status** and **service sshd restart**
+* attempt login with recently added account, added to sshd_config AllowUsers, to confirm is works
 
 ```
 ssh machine
