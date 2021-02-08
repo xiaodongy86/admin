@@ -1,3 +1,10 @@
+The process to allow an account to login to a lab machine is like this:
+
+* make backup copy of /etc/ssh/sshd_config
+* add users account ID to the end of the line starting with AllowUsers
+* ensure that you already have a logged-in terminal on the machine so in case of sshd failing to restart
+* restart sshd with **service sshd status** and **service sshd restart**
+
 ```
 ssh machine
 cp /etc/ssh/sshd_config /etc/ssh/sshd_config_WORKS20210204
