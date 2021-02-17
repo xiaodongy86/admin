@@ -30,8 +30,10 @@ google-chrome
 then login to your psu account and go to drive.google.com
 then click "New" or try to drag-and-drop from your xdg-open window onto drive.google.com
 if its a big file/folder, then lock the screen and go home.  The next day, be sure to look at the drive.google.com popup to verify that it is a green checkmark and says that the file upload was successful.  
-And remember to use "mount" to see what is mounted and use "umount" to unmount the sshfs things you have, like this for a mount at /mnt/droplet5
+And remember to use "mount" to see what is mounted and use "umount" to unmount the sshfs things you have, like this for a mount at 
+```
+/mnt/droplet5
 sudo umount /mnt/droplet5
-
+```
 
 
