@@ -18,3 +18,6 @@ sudo reboot
 after reboot, since the /home line in fstab file got commented out,
 only nimda would be able to log in , we will login as nimda and put /home
 line back, mount /home, then the other users can login. 
+```
+sudo nano /etc/fstab
+```
